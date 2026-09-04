@@ -1,6 +1,6 @@
 # Shell 运维脚本工具集
 
-> 这些脚本是我在 **广州亚信技术有限公司** 担任系统运维实习生期间，为解决实际运维问题而编写的工具集。所有脚本均经过测试，并在生产环境验证。
+> 这些脚本是我在担任系统运维实习生期间，为解决实际运维问题而编写的工具集。所有脚本均经过测试，并在生产环境验证。
 
 ---
 
@@ -17,7 +17,6 @@
 | **编码规范** | `Yange_pattern.sh` | 演示严格模式（`set -euo pipefail`）与错误处理 | 生产环境脚本编写规范参考 |
 
 ---
-
 
 ## 🚀 快速开始
 
@@ -39,4 +38,55 @@ chmod +x scripts/*/*.sh Yange_pattern.sh
 
 # 6. 运行磁盘监控脚本（自定义阈值85%）
 ./scripts/monitoring/disk_alert.sh -t 85
-```
+
+
+# 📚 脚本使用示例
+
+# disk_alert.sh
+
+# 查看帮助
+./scripts/monitoring/disk_alert.sh -h
+
+# 使用默认阈值80%监控
+./scripts/monitoring/disk_alert.sh
+
+# 设置阈值为85%
+./scripts/monitoring/disk_alert.sh -t 85
+
+
+# ------------------------------------
+
+# compress_old_logs.sh
+
+# 查看帮助
+./scripts/log-management/compress_old_logs.sh -h
+
+# 压缩7天前的日志（默认）
+./scripts/log-management/compress_old_logs.sh
+
+# 压缩30天前的日志
+./scripts/log-management/compress_old_logs.sh -d 30
+
+
+
+# ----------------------------------------
+
+# system_info.sh
+
+# 查看帮助
+./scripts/system-info/system_info.sh -h
+
+# 收集当前主机信息
+./scripts/system-info/system_info.sh
+
+
+
+# ------------------------------------
+
+# Yange_pattern.sh
+
+# 查看帮助
+./Yange_pattern.sh -h
+
+# 运行脚本，演示严格模式和错误处理
+./Yange_pattern.sh
