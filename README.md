@@ -18,6 +18,7 @@
 
 ---
 
+
 ## 🚀 快速开始
 
 ```bash
@@ -38,3 +39,4 @@ chmod +x scripts/*/*.sh Yange_pattern.sh
 
 # 6. 运行磁盘监控脚本（自定义阈值85%）
 ./scripts/monitoring/disk_alert.sh -t 85
+```
